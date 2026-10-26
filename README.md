@@ -26,15 +26,15 @@
 
    Да:
    Вывод: of
-10) Проверка условия: chars_to_print==0:
+10) chars_to_print = (b * (i + 1)) / a
+11) Проверка условия: chars_to_print==0:
     
     Да:
     chars_to_print = 1
     
     Нет:
-    chars_to_print = (b * (i + 1)) / a
-11) Ввод данных: j=0
-12) Проверка условия: j<chars_to_print
+12) Ввод данных: j=0
+13) Проверка условия: j<chars_to_print
     
     Вывод данных: sym
     
