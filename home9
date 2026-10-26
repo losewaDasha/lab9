@@ -10,8 +10,8 @@ int main() {
     setlocale(LC_ALL, "RUS");
     
     int a, b;
-    char fill_char;
-    const int offset = 5;
+    char sym;
+    const int of = 5;
 
     printf("Введите длину вертикального катета a (целое число > 0): ");
     if (scanf("%d", &a) != 1 || a <= 0) {
@@ -28,13 +28,13 @@ int main() {
     while (getchar() != '\n');
 
     printf("Введите символ для заполнения фигуры: ");
-    scanf("%c", &fill_char);
+    scanf("%c", &sym);
 
     printf("\n--- Результат ---\n\n");
 
     for (int i = 0; i < a; i++) {
 
-        for (int k = 0; k < offset; k++) {
+        for (int k = 0; k < of; k++) {
             printf(" ");
         }
 
@@ -42,7 +42,7 @@ int main() {
         if (chars_to_print == 0) chars_to_print = 1;
 
         for (int j = 0; j < chars_to_print; j++) {
-            printf("%c", fill_char);
+            printf("%c", sym);
         }
 
         printf("\n");
